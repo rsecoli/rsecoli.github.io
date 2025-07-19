@@ -395,3 +395,67 @@
 		text-align: center;
 		width: 100%;
 	}
+
+/* --- Stylish Enhancements --- */
+
+/* Gradient Overlay for #overlay */
+#overlay {
+  background-image: linear-gradient(135deg, rgba(52,140,178,0.85) 0%, rgba(255,94,98,0.65) 100%), url("images/overlay-pattern.png"), url("images/overlay.svg");
+  background-blend-mode: overlay, normal, normal;
+}
+
+/* Header Modernization */
+#header h1 {
+  color: #fff;
+  text-shadow: 0 4px 24px rgba(52,140,178,0.5), 0 1px 0 #333;
+  letter-spacing: 0.04em;
+  font-size: 4.5em;
+  background: linear-gradient(90deg, #348cb2 30%, #ff5e62 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#header p {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 1.3em;
+  color: #e0e0e0;
+  text-shadow: 0 2px 8px rgba(52,140,178,0.2);
+}
+
+/* Social Icon Enhancements */
+#header nav a {
+  border-radius: 2em;
+  box-shadow: 0 2px 12px rgba(52,140,178,0.12);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  background: rgba(255,255,255,0.05);
+  padding: 0.2em 0.4em;
+}
+#header nav a:hover {
+  transform: scale(1.15) translateY(-4px);
+  box-shadow: 0 4px 24px rgba(255,94,98,0.25);
+  background: linear-gradient(90deg, #348cb2 0%, #ff5e62 100%);
+}
+#header nav a.fa-twitter:hover:before { color: #1da1f2; }
+#header nav a.fa-linkedin-square:hover:before { color: #0077b5; }
+#header nav a.fa-github:hover:before { color: #333; }
+#header nav a.fa-space-shuttle:hover:before { color: #ff5e62; }
+
+/* Footer Glow */
+#footer {
+  background: none;
+  box-shadow: 0 -4px 32px 0 rgba(52,140,178,0.25);
+  color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 0.08em;
+}
+
+/* Responsive Typography for subtitle */
+@media (max-width: 600px) {
+  #header h1 {
+    font-size: 2.2em;
+  }
+  #header p {
+    font-size: 1em;
+  }
+}
