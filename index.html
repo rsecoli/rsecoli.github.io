@@ -1,15 +1,39 @@
 <!DOCTYPE HTML>
 <!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
+	Aerial by HTML5 UP - Modernized & Stylized Version
+	Enhanced with modern design principles and visual effects
+	Original: html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Riccardo Secoli - Personal Website</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="Riccardo Secoli, PhD, EMBA - Robotic Researcher, Passionate Coder, and Traveller. Explore my professional journey and projects.">
+		<meta name="keywords" content="Riccardo Secoli, robotics, researcher, coder, PhD, EMBA, technology, innovation">
+		<meta name="author" content="Riccardo Secoli">
+		
+		<!-- Open Graph / Social Media -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Riccardo Secoli - Personal Website">
+		<meta property="og:description" content="Robotic Researcher • Passionate Coder • Traveller">
+		<meta property="og:url" content="#">
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@dr_rsecoli">
+		<meta name="twitter:title" content="Riccardo Secoli - Personal Website">
+		<meta name="twitter:description" content="Robotic Researcher • Passionate Coder • Traveller">
+		
+		<!-- Favicon -->
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+		
+		<!-- Preconnect to Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<!-- Stylesheets -->
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
@@ -24,30 +48,77 @@
 	</head>
 	<body class="loading">
 		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-
+			<div id="bg" role="presentation" aria-hidden="true"></div>
+			<div id="overlay" role="presentation" aria-hidden="true"></div>
+			
+			<main id="main">
 				<!-- Header -->
-					<header id="header">
-						<h1>Riccardo Secoli, PhD, EMBA</h1>
-						<p>Robotic Researcher &nbsp;&bull;&nbsp; Passionate Coder  &nbsp;&bull;&nbsp; Traveller</p>
-						<nav>
-							<ul>
-								<li><a href="https://twitter.com/dr_rsecoli" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/riccardosecoli/" class="icon fa-linkedin-square"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-space-shuttle"><span class="label">Projects</span></a></li>
-								<li><a href="https://github.com/rsecoli" class="icon fa-github"><span class="label">Github</span></a></li>
-							</ul>
-						</nav>
-					</header>
+				<header id="header" role="banner">
+					<h1>Riccardo Secoli, PhD, EMBA</h1>
+					<p>Robotic Researcher &nbsp;•&nbsp; Passionate Coder &nbsp;•&nbsp; Traveller</p>
+					<nav role="navigation" aria-label="Social media and professional links">
+						<ul>
+							<li>
+								<a href="https://twitter.com/dr_rsecoli" 
+								   class="icon fa-twitter" 
+								   aria-label="Follow me on Twitter"
+								   target="_blank" 
+								   rel="noopener noreferrer">
+									<span class="label">Twitter</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/riccardosecoli/" 
+								   class="icon fa-linkedin-square" 
+								   aria-label="Connect with me on LinkedIn"
+								   target="_blank" 
+								   rel="noopener noreferrer">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" 
+								   class="icon fa-space-shuttle" 
+								   aria-label="View my projects"
+								   title="Projects">
+									<span class="label">Projects</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/rsecoli" 
+								   class="icon fa-github" 
+								   aria-label="Check out my GitHub profile"
+								   target="_blank" 
+								   rel="noopener noreferrer">
+									<span class="label">Github</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</main>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; 2023</span>
-					</footer>
-				
-			</div>
+			<!-- Footer -->
+			<footer id="footer" role="contentinfo">
+				<span class="copyright">&copy; 2023 Riccardo Secoli. All rights reserved.</span>
+			</footer>
 		</div>
+
+		<!-- Schema.org structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Riccardo Secoli",
+			"jobTitle": "Robotic Researcher",
+			"description": "PhD, EMBA - Robotic Researcher, Passionate Coder, and Traveller",
+			"url": "#",
+			"sameAs": [
+				"https://twitter.com/dr_rsecoli",
+				"https://www.linkedin.com/in/riccardosecoli/",
+				"https://github.com/rsecoli"
+			]
+		}
+		</script>
 	</body>
 </html>
