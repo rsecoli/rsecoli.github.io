@@ -18,8 +18,7 @@
 	}
 
 	body {
-		background: white;
-		overflow: hidden;
+		background: linear-gradient(135deg, #348cb2 0%, #3a3a72 100%) no-repeat fixed;
 	}
 
 		body.loading * {
@@ -84,6 +83,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
+		padding: 2em 0;
 	}
 
 /* BG */
@@ -169,6 +169,64 @@
 			vertical-align: middle;
 			width: 1px;
 		}
+
+/* --- Stylish Enhancements --- */
+
+#main {
+    background: rgba(34, 40, 49, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2em 0;
+    margin: 2em auto;
+    max-width: 600px;
+}
+
+#header h1 {
+    font-family: 'Source Sans Pro', 'Segoe UI', Arial, sans-serif;
+    font-size: 3.5em;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(52, 140, 178, 0.3);
+}
+
+#header p {
+    color: #e0e0e0;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+    text-shadow: 0 1px 4px rgba(52, 140, 178, 0.15);
+}
+
+#header nav a:before {
+    border: none;
+    background: linear-gradient(135deg, #348cb2 0%, #3a3a72 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(52, 140, 178, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#header nav a:hover:before {
+    background: linear-gradient(135deg, #3a3a72 0%, #348cb2 100%);
+    color: #ffd700;
+    transform: scale(1.15);
+    box-shadow: 0 4px 16px rgba(52, 140, 178, 0.35);
+}
+
+#header nav a:hover {
+    color: #ffd700;
+}
+
+#footer {
+    background: linear-gradient(0deg, rgba(34,40,49,0.8) 0%, rgba(34,40,49,0.0) 100%);
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(52, 140, 178, 0.15);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: 0 -2px 8px rgba(52, 140, 178, 0.15);
+}
 
 /* Header */
 	@-moz-keyframes header { 0% { -moz-transform: translate3d(0,1em,0); -webkit-transform: translate3d(0,1em,0); -o-transform: translate3d(0,1em,0); -ms-transform: translate3d(0,1em,0); transform: translate3d(0,1em,0); opacity: 0; } 100% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; } }
