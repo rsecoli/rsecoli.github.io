@@ -1,0 +1,73 @@
+/*
+  Custom overrides to give website a fresh, modern look
+  ----------------------------------------------------
+  This stylesheet is intentionally loaded *after* the theme styles so that
+  any rules declared here will override the defaults without having to edit
+  the upstream template files.
+*/
+
+/* 1. Typography ---------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  /* Colour palette */
+  --accent: #ff6b6b;
+  --accent-secondary: #1dd1a1;
+  --text-color: #ffffff;
+  --bg-gradient-start: #4f93ce;
+  --bg-gradient-end: #285c9e;
+}
+
+body {
+  font-family: "Poppins", "Source Sans Pro", sans-serif;
+  color: var(--text-color);
+  /* Fall back on existing styles if no gradient is supported */
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+}
+
+/* 2. Header -------------------------------------------------------------- */
+#header h1 {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#header p {
+  opacity: 0.85;
+}
+
+/* 3. Navigation icons ---------------------------------------------------- */
+#header nav a:before {
+  border-color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+#header nav a {
+  transition: transform 0.3s ease;
+}
+
+#header nav a:hover {
+  transform: scale(1.15) rotate(6deg);
+}
+
+#header nav a:hover:before {
+  background-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 4. Glass-morphism overlay --------------------------------------------- */
+#overlay {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+/* 5. Deactivate scrolling background image ----------------------------- */
+#bg {
+  display: none;
+}
+
+/* 6. Footer -------------------------------------------------------------- */
+#footer {
+  color: var(--text-color);
+  font-size: 0.9em;
+}
