@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Riccardo Secoli - Robotic Researcher, Passionate Coder, and Traveller. PhD and EMBA holder with expertise in robotics and software development.">
+    <meta name="description"
+        content="Riccardo Secoli - Robotic Researcher, Passionate Coder, and Traveller. PhD and EMBA holder with expertise in robotics and software development.">
     <meta name="keywords" content="robotics, research, coding, software development, PhD, EMBA">
     <meta name="author" content="Riccardo Secoli">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rsecoli.github.io/">
     <meta property="og:title" content="Riccardo Secoli - Personal Website">
     <meta property="og:description" content="Robotic Researcher, Passionate Coder, and Traveller">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://rsecoli.github.io/">
     <meta property="twitter:title" content="Riccardo Secoli - Personal Website">
     <meta property="twitter:description" content="Robotic Researcher, Passionate Coder, and Traveller">
-    
+
     <title>Riccardo Secoli - Personal Website</title>
-    
+
     <!-- Modern Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <!-- Modern Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/modern-style.css">
-    
+
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
 </head>
+
 <body>
     <div class="container">
         <!-- Background with modern gradient -->
@@ -45,7 +51,7 @@
             <div class="gradient-overlay"></div>
             <div class="particles"></div>
         </div>
-        
+
         <!-- Main Content -->
         <main class="main-content">
             <header class="hero">
@@ -55,24 +61,28 @@
                             <i class="fas fa-robot"></i>
                         </div>
                     </div>
-                    
+
                     <h1 class="name">Riccardo Secoli</h1>
                     <p class="title">PhD, EMBA</p>
                     <p class="subtitle">Robotic Researcher • Passionate Coder • Traveller</p>
-                    
+
                     <div class="description">
-                        <p>Exploring the intersection of robotics, artificial intelligence, and human-computer interaction. Building innovative solutions that bridge the gap between research and real-world applications.</p>
+                        <p>Exploring the intersection of robotics, artificial intelligence, and human-computer
+                            interaction. Building innovative solutions that bridge the gap between research and
+                            real-world applications.</p>
                     </div>
-                    
+
                     <nav class="social-nav" aria-label="Social media links">
                         <ul class="social-links">
                             <li>
-                                <a href="https://twitter.com/dr_rsecoli" aria-label="Twitter" class="social-link twitter">
+                                <a href="https://twitter.com/dr_rsecoli" aria-label="Twitter"
+                                    class="social-link twitter">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/riccardosecoli/" aria-label="LinkedIn" class="social-link linkedin">
+                                <a href="https://www.linkedin.com/in/riccardosecoli/" aria-label="LinkedIn"
+                                    class="social-link linkedin">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -91,7 +101,35 @@
                 </div>
             </header>
         </main>
-        
+
+        <!-- Code from Papers Section -->
+        <section class="papers-section">
+            <div class="container">
+                <h2 class="section-title">Code from Papers</h2>
+                <div class="papers-grid">
+                    <article class="paper-card">
+                        <h3>Path Replanning for Orientation-Constrained Needle Steering</h3>
+                        <p>
+                            This project implements a novel path-replanning algorithm for steerable needles in
+                            neurosurgery.
+                            It addresses challenges like tissue deformation, obstacles, and catheter control.
+                            The core algorithm combines 'Bubble Bending' for real-time path deformation with a 3D convex
+                            optimization method for path smoothing.
+                            This allows for closed-loop guidance using electromagnetic tracking, ensuring the needle
+                            reaches the target pose with high accuracy while avoiding sensitive structures.
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://github.com/rsecoli/Path-Replanning-for-Orientation-Constrained-Needle-Steering"
+                                class="repo-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                                View Repository
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- LinkedIn Feed Section -->
         <section class="linkedin-feed">
             <div class="container">
@@ -102,33 +140,32 @@
                             <i class="fab fa-linkedin-in"></i>
                         </div>
                         <h3>Professional Updates</h3>
-                        <p>Stay connected with my latest professional insights, research updates, and industry thoughts.</p>
-                        <a href="https://www.linkedin.com/in/riccardosecoli/" class="cta-button" target="_blank" rel="noopener">
+                        <p>Stay connected with my latest professional insights, research updates, and industry thoughts.
+                        </p>
+                        <a href="https://www.linkedin.com/in/riccardosecoli/" class="cta-button" target="_blank"
+                            rel="noopener">
                             <i class="fab fa-linkedin-in"></i>
                             View LinkedIn Profile
                         </a>
                     </div>
-                    
+
                     <!-- LinkedIn Feed Widget -->
                     <div class="linkedin-widget">
-                        <iframe 
-                            src="https://www.linkedin.com/embed/feed/update/urn:li:share:YOUR_POST_ID" 
-                            height="400" 
-                            width="100%" 
-                            frameborder="0" 
-                            allowfullscreen="" 
-                            title="LinkedIn Post">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:YOUR_POST_ID" height="400"
+                            width="100%" frameborder="0" allowfullscreen="" title="LinkedIn Post">
                         </iframe>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <footer class="footer">
-            <p>&copy; <span id="current-year">2024</span> Riccardo Secoli. Built with ❤️ and modern web technologies.</p>
+            <p>&copy; <span id="current-year">2024</span> Riccardo Secoli. Built with ❤️ and modern web technologies.
+            </p>
         </footer>
     </div>
-    
+
     <script src="js/modern-init.js"></script>
 </body>
+
 </html>
